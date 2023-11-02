@@ -8,7 +8,7 @@ questions =["1. What is the longest bone in the human body?",
             "8. Which is the nearest planet to our sun?",
             "9. What is the coldest planet in the solar system?",
             "10 What is the largest ocean trench on Earth?"]
-answers = ["femur","pacific","tokyo","venice","jupiter","portuguese","everest","mercury","neptune","mariana trench"]
+answers = ["femur","pacific","tokyo","rome","jupiter","portuguese","everest","mercury","neptune","mariana trench"]
 totalMark = 0
 name = input("To enter the quiz type in your name:\n")
 print("Let's start the quiz, Good Luck!")
@@ -16,7 +16,8 @@ for quizLoop in range(len(questions)):
     currentQuestion = questions[quizLoop]
     realAnswer = answers[quizLoop]
     print(currentQuestion)
-    currentAnswer = input("Your answer: ".lower())
+    currentAnswer = input("Your answer: ")
+    currentAnswer = currentAnswer.lower()
     if currentAnswer == realAnswer:
         totalMark += 1
 
@@ -26,6 +27,6 @@ if totalMark >= 6:
 elif totalMark >= 3 and totalMark < 6:
     comment = "You can do better!"
 else:
-    comment = "YOU FAILED..... Well,good luck next time."
+    comment = "You failed.... Well,good luck next time."
 
-print("Hello",name,",you got a",totalMark,"/ 10 in this quiz.",comment )
+print(F"Hello {name} you got a {totalMark} / 10 in this quiz. {comment}")
