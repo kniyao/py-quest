@@ -19,4 +19,4 @@ def adding_vectors(vec1,vec2):
     else:
         print("sorry, The length of the lists should be same!")
 
-adding_vectors([1,3,2],[5,4,3])
+adding_vectors([24,33,54],[23,42,32])
