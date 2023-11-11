@@ -12,7 +12,7 @@ class Person:
 p1 = Person("niya")
 p2 = Person("rinu")
 
-# Access the class variable using the class
+# can access the class variable using the class
 print(Person.count)
 # Access the class variable using an object
 print(p1.count)
