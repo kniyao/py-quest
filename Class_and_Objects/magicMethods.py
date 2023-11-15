@@ -23,6 +23,7 @@ class Value:
         return f"{str(self.x)}, {str(self.y)}"
 
 
+
 class Compare:
     def __init__(self, i, j):
         self.i = i
@@ -30,7 +31,7 @@ class Compare:
     # compares two objects
 
     def __eq__(self, c):
-        return self.i == c.i and self.i == c.i
+        return self.i == c.i and self.j == c.j
     
     def __gt__(self, c):
         return self.i > c.i and self.j > c.j
@@ -43,6 +44,9 @@ class Compare:
     
     def __le__(self, c):
         return self.i <= c.i and self.j < c.j
+    
+
+
 
 class MyList:
     def __init__(self, items):
@@ -50,6 +54,8 @@ class MyList:
     # returns the length of the object
     def __len__(self):
         return len(self.items)
+
+
 
 p1 = Value(5,6)
 p2 = Value(7,7)
@@ -68,6 +74,8 @@ print(c1 == c2)
 print(c4 < c1)
 print(c3 > c4)
 print(c4 > c3)
+print(c4 >= c2)
+print(c4 <= c3)
 
 item1 = MyList(["apple","banana","orange","papaya"])
 item2 = MyList([1,2,3,4,5,6,7,8])
