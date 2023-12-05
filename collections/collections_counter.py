@@ -28,7 +28,7 @@ print(list(con.elements()))
 colors = Counter(red = 5, blue = 3, yellow = 12, green = 4)
 print(colors.most_common(2))
 
-# .subtract() : Subtracts the count of identical elements from the object and the identical the data we pass
+# .subtract(_) : Subtracts the count of identical elements from the object and the identical the data we pass
 letters = Counter(a = 2, b = 4, c = 6, d = 10)
 letters2 =  Counter(["a", "b", "d", "d", "d", "a", "b", "d", "c", "c"])
 letters3 =  ["a", "b", "a", "b"]
@@ -40,7 +40,7 @@ letters.subtract(letters2)
 print(letters)
 
 
-# .update() : adds up the count of identical elements from the object and the identical the data we pass
+# .update(_) : adds up the count of identical elements from the object and the identical the data we pass
 l = Counter(a = 2, b = 4, c = 5)
 l2 =  Counter(["a", "a", "b", "b", "b", "c", "c", "c", "d", "d"])
 l3 =  ["a", "a", "a", "b", "d"]
@@ -50,4 +50,11 @@ print(l)
 
 l.update(l2)
 print(l)
+
+# .clear() : removes all the elements and we get an empty object
+obj = Counter(["cat", "cat", "dog", "dog", "dog", "cow"])
+print(obj)
+obj.clear()
+print(obj)
+
 
