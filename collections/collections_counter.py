@@ -57,4 +57,18 @@ print(obj)
 obj.clear()
 print(obj)
 
+"""operations """
+A1 =  Counter(["a", "a", "b", "b", "b", "c", "c", "c", "d", "d"])
+A2 =  Counter(["a", "a", "a", "b", "d"])
 
+# addition: adds the sums of elements
+print(A1+A2)
+
+# subtraction: subtracts the sum of elements
+print(A1-A2)
+
+# Intersection: finds the common elements and return the minimum sum of them, it do not return 0 or less
+print(A1&A2)
+
+# Union: finds the common elements and returns the maximun sum , and it does not return 0 or less
+print(A1|A2)
