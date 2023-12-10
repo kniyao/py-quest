@@ -67,8 +67,8 @@ print(A1+A2)
 # subtraction: subtracts the sum of elements
 print(A1-A2)
 
-# Intersection: finds the common elements and return the minimum sum of them, it do not return 0 or less
+# Intersection: return the number of element inside the operant which has the minimum sum of the common element, it do not return 0 or less
 print(A1&A2)
 
-# Union: finds the common elements and returns the maximun sum , and it does not return 0 or less
+# Union: return the number of element inside the operant which has the minimum sum of the common element, it do not return 0 or less
 print(A1|A2)
